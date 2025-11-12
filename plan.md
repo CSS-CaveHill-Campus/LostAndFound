@@ -60,19 +60,19 @@ This application follows a modern, component-based architecture for the frontend
 ### Frontend Architecture
 
 -   Components: The UI is broken down into small, reusable components (e.g., `Button`, `Input`, `ReportCard`).
--   Pages: Next.js uses a file-based routing system where each file in the `pages` directory becomes a route (e.g., `pages/index.js` is the homepage).
+-   Pages: Next.js uses a file-based routing system where each file or folder in the `app` directory becomes a route segment (e.g., `app/page.tsx` is the homepage).
 -   Layouts: We will create a main `Layout` component to maintain a consistent look and feel (e.g., header, footer) across all pages.
 
 The project will be structured as follows:
 
 ```
-/src
-├── /components    # Reusable UI components
-├── /pages         # Application routes
-│   ├── /api       # Backend API endpoints
-│   └── /app       # Frontend pages
-├── /lib           # Helper functions, database connection
-└── /styles        # Global styles
+lost-and-found/
+├── /public            # Any public resources like images
+└── /src
+    └── /app           # Application routes
+        ├── /components    # Reusable UI components
+        ├── /lib           # Helper functions, database connection
+        └── /styles        # Global styles
 ```
 
 ### Backend & API Design
